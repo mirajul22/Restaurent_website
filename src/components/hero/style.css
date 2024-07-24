@@ -1,0 +1,44 @@
+#btn {
+    background: transparent;
+    border: 0.063rem solid #f01543;
+    color: #f01543;
+}
+
+#btn:hover {
+    background: #f01543;
+    color: white;
+    transition: all 0.3s linear;
+}
+#span
+{
+    background: linear-gradient(90deg, #f01543 -1.58%, #fe724c 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#btn1
+{
+    border: 0.063rem solid #f01543;
+    background-color: #f01543;
+
+}
+#btn1:hover
+{
+    background: transparent;
+    transition: all 0.2s linear;
+    color: #f01543;
+}
+
+p
+{
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+.img
+{
+        background-image: url('./images/bg/banner.png');
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}

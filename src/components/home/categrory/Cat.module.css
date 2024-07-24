@@ -1,0 +1,106 @@
+.bg
+{
+    background-image: url('./images/bg/categories.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 62vh;
+    width: 100%;
+}
+
+.button {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    /* font-family: "Helvetica", sans-serif; */
+    color: black;
+    background: #e5e6eb;
+
+    padding: 35px 45px;
+    border: 1px solid #e5e6eb;
+    /* text-transform: uppercase; */
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 500;
+    /* width: 160px; */
+    overflow: hidden;
+}
+
+.span {
+    z-index: 5;
+    position: relative; 
+    align-items: center;
+    transition: color 350ms ease;
+}
+
+.button:hover span {
+    color: white;
+}
+
+.button::after,
+.button::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: red;
+    z-index: -1;
+}
+
+.button::before {
+    /*   background: blue; */
+    transform: translateX(-100%);
+    z-index: 1;
+}
+
+.button:hover:before {
+    transform: translateX(0);
+    transition: transform 350ms ease;
+}
+
+.button::after {
+    z-index: 0;
+    transform: translateX(100%);
+    transition: none;
+    transition: transform 350ms ease;
+}
+
+.button:hover:after {
+    opacity: 1;
+    transform: translateX(0);
+    transition: transform 350ms 360ms ease;
+}
+.btn{
+    border: 1px solid #f01543;
+    padding: 12px 30px;
+    font-size: 20px;
+    font-weight: 400;
+    border-radius: 10px;
+    color: #f01543;
+    transition: all 0.25s linear;
+}
+.btn:hover
+{
+  background-color: #f01543;
+  color: #fff;
+}
+.img
+{
+    position: relative;
+    height: 21.25rem;
+    width: 32.5rem;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s linear;
+}
+.img1
+{
+    position: relative;
+    height: 21.25rem;
+    width: 48.125rem;
+    overflow: hidden;
+    cursor: pointer;
+}
